@@ -9,7 +9,7 @@ class Solution:
             return True
         if n % 2 != 0:
             return False
-        #如此循环是因为括号之间会存在嵌套
+        # 如此循环是因为括号之间会存在嵌套
         while '()' in s or '[]' in s or '{}' in s:
             s = s.replace('()', '').replace('[]', '').replace('{}', '')
         if s == '':
